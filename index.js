@@ -143,7 +143,124 @@ Create a function called hasEnoughPlayers() that takes the team array as an argu
 */
 // your code goes here
 const team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+function hasEnoughPlayers (team){
+  if (team.length >= 7) {
+    return true;
+  }
+    else {
+      return false; 
+    }
+}
+  
+  
 console.log(hasEnoughPlayers(team));
+
+
+/*
+6. In an earlier exercise, you created a crew array to represent Mal’s crew from the hit show Firefly.
+
+let captain = "Mal";
+let second = "Zoe";
+let pilot = "Wash";
+let companion = "Inara";
+let mercenary = "Jayne";
+let mechanic = "Kaylee";
+
+const crew = [captain, second, pilot, companion, mercenary, mechanic];
+
+Later in the show, Mal takes on three new crew members named "Simon", "River", and "Book". Use the push() method to add the three new crew members to the crew array.
+
+let doctor = "Simon";
+let sister = "River";
+let shepherd = "Book";
+/*
+* Programming Quiz: Joining the Crew
+*/
+/*
+* QUIZ REQUIREMENTS
+* - Your code should have a variable `crew`
+* - Your `crew` array should contain the Serenity\'s original crew and the three new crew members
+* - Your code should use the `push()` method to add new members to the `crew` array
+* - Print the array on the console at the end
+*/
+
+let captain = "Mal";
+let second = "Zoe";
+let pilot = "Wash";
+let companion = "Inara";
+let mercenary = "Jayne";
+let mechanic = "Kaylee";
+
+let crew = [captain, second, pilot, companion, mercenary, mechanic];
+
+let doctor = "Simon";
+let sister = "River";
+let shepherd = "Book";
+
+// your code goes here
+
+crew.push(doctor, sister, shepherd);
+
+
+console.log(crew);
+
+
+/*
+7. Use the MDN Documentation to determine which of these methods would be best for reversing elements in this array:
+
+const reverseMe = ["h", "e", "l", "l", "o"];
+pop()
+push()
+reverse()
+shift()
+splice()*/
+
+
+const reverseMe = ["h", "e", "l" "l", "o"];
+reverseMe = reverseMe.reverse();
+console.log(reverseMe);
+
+
+answer - reverse()
+
+
+/*
+What would be the best array method to sort the elements in this array:
+
+const sortMe = [2, 1, 10, 7, 6];
+   1.	concat()
+   2. join()
+   3. unshift()
+   4. sort()
+   5. organize()*/
+
+
+   
+const sortMe = [2, 1, 10, 7, 6];   
+
+console.log(sortMe.sort());
+   
+  
+/*
+Consider the following array, removeFirstElement:
+var removeFirstElement = ["a", "b", "c"];
+Let's say that you want to modify (i.e., mutate) removeFirstElement by removing the first element within it. Which method(s) could you use?
+   1.	pop()
+  2. push()
+  3. shift()
+  4. unshift()
+  5. splice()
+slice()
+
+What method would be best for changing this array into a string?
+const turnMeIntoAString = ["U", "d", "a", "c", "i", "t", "y"];
+join()
+concat()
+fill()
+copyWithin()
+
+
+
 
 
 
