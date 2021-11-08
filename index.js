@@ -245,13 +245,20 @@ console.log(sortMe.sort());
 Consider the following array, removeFirstElement:
 var removeFirstElement = ["a", "b", "c"];
 Let's say that you want to modify (i.e., mutate) removeFirstElement by removing the first element within it. Which method(s) could you use?
-   1.	pop()
+  1. pop()
   2. push()
   3. shift()
   4. unshift()
-  5. splice()
-slice()
+  5. splice()*/
 
+var removeFirstElement = ["a", "b", "c"];
+removeFirstElement.shift();
+console.log(removeFirstElement);
+
+
+
+
+/*
 What method would be best for changing this array into a string?
 const turnMeIntoAString = ["U", "d", "a", "c", "i", "t", "y"];
 join()
@@ -260,8 +267,12 @@ fill()
 copyWithin()*/
 
 
+const turnMeIntoAString = ["U", "d", "a", "c", "i", "t", "y"];
+turnMeIntoAString.join();
+console.log(turnIntoAString.join());
 
 
+/*
 8. Use the array's forEach() method to loop over the following array and add 100 to each of the values if the value is divisible by 3.
 
 const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
@@ -286,6 +297,7 @@ var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
 
 
 
+/*
 
 9. Use the map() method to take the array of bill amounts shown below, and create a second array of numbers called totals that shows the bill amounts with a 15% tip added.
 
@@ -323,7 +335,7 @@ const bills = [50.23, 19.12, 34.01,
 
 
 
-
+/*
 10. Use a nested for loop to take the numbers array below and replace all of the values that are divisible by 2 (even numbers) with the string "even" and all other numbers with the string "odd".
 
 
